@@ -144,3 +144,4 @@ Si tienes alguna pregunta o sugerencia, por favor:
 ---
 
 **Desarrollado con ❤️ para conversiones precisas y rápidas**
+# Updated for Vercel compatibility
