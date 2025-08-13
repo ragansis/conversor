@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades - Convertidor Métrico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-exchange-alt"></i>
+                <h1>Conversor de Unidades</h1>
+            </div>
+            <p class="subtitle">Conversiones métricas precisas y rápidas</p>
+        </header>
+
+        <main class="main-content">
+            <div class="converter-card">
+                <div class="input-group">
+                    <label for="fromValue">Valor a convertir</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="fromValue" placeholder="0" step="any">
+                        <select id="fromUnit">
+                            <option value="m">Metros (m)</option>
+                            <option value="km">Kilómetros (km)</option>
+                            <option value="cm">Centímetros (cm)</option>
+                            <option value="mm">Milímetros (mm)</option>
+                            <option value="ft">Pies (ft)</option>
+                            <option value="in">Pulgadas (in)</option>
+                            <option value="yd">Yardas (yd)</option>
+                            <option value="mi">Millas (mi)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="swap-button">
+                    <button id="swapBtn" title="Intercambiar unidades">
+                        <i class="fas fa-arrows-alt-h"></i>
+                    </button>
+                </div>
+
+                <div class="input-group">
+                    <label for="toUnit">Convertir a</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="toValue" placeholder="0" readonly>
+                        <select id="toUnit">
+                            <option value="ft">Pies (ft)</option>
+                            <option value="m">Metros (m)</option>
+                            <option value="km">Kilómetros (km)</option>
+                            <option value="cm">Centímetros (cm)</option>
+                            <option value="mm">Milímetros (mm)</option>
+                            <option value="in">Pulgadas (in)</option>
+                            <option value="yd">Yardas (yd)</option>
+                            <option value="mi">Millas (mi)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-conversions">
+                <h3>Conversiones Rápidas</h3>
+                <div class="quick-grid">
+                    <div class="quick-item" data-from="1" data-from-unit="m" data-to-unit="ft">
+                        <span class="quick-value">1 m</span>
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="quick-result">3.28 ft</span>
+                    </div>
+                    <div class="quick-item" data-from="1" data-from-unit="km" data-to-unit="mi">
+                        <span class="quick-value">1 km</span>
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="quick-result">0.62 mi</span>
+                    </div>
+                    <div class="quick-item" data-from="1" data-from-unit="ft" data-to-unit="m">
+                        <span class="quick-value">1 ft</span>
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="quick-result">0.30 m</span>
+                    </div>
+                    <div class="quick-item" data-from="1" data-from-unit="in" data-to-unit="cm">
+                        <span class="quick-value">1 in</span>
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="quick-result">2.54 cm</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h4>¿Cómo usar?</h4>
+                    <p>Ingresa el valor que quieres convertir, selecciona las unidades de origen y destino, y obtén el resultado al instante.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-calculator"></i>
+                    <h4>Precisión</h4>
+                    <p>Nuestras conversiones utilizan factores de conversión estándar para garantizar la máxima precisión.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Conversor de Unidades. Desarrollado con ❤️ para conversiones precisas.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
